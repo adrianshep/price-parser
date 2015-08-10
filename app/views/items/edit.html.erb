@@ -1,6 +1,7 @@
-<h2 id="primary">Edit <%= @item.name %> at <%= @item.store.name %></h2>
+<body id="primary">
+<h2>Edit <%= @item.name %> at <%= @item.store.name %></h2>
 
-<form action="/stores/<%= @item.store.id %>/items/<%= @item.id %>" method="post"  id="primary">
+<form action="/stores/<%= @item.store.id %>/items/<%= @item.id %>" method="post" >
   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
   <input type="hidden" name="_method" value="put">
 
@@ -34,7 +35,7 @@
 </form>
 
 
-<form action="/stores/<%= @item.store.id %>/items/<%= @item.id %>" method="post"  id="primary">
+<form action="/stores/<%= @item.store.id %>/items/<%= @item.id %>" method="post" >
   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
   <input type="hidden" name="_method" value="delete">
   <input class="button-delete" type="submit" value="Delete!">
@@ -42,3 +43,4 @@
 
 
 <%= link_to '<< Back to store items', @store %>
+</body>

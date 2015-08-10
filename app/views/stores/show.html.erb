@@ -1,13 +1,15 @@
-<h2 id="primary"><%=@store.name %> <%= link_to("(edit)", edit_store_path(@store)) %></h2>
+<body id="primary">
+<h2><%=@store.name %> <%= link_to("(edit)", edit_store_path(@store)) %></h2>
 
-<h3 id="primary">Items <%= link_to("(create)", new_store_item_path(@store)) %></h3>
+<h3>Items <%= link_to("(create)", new_store_item_path(@store)) %></h3>
 
   <% @items.each do |item| %>
-  <div id="primary">
+  <div>
   <%= item.name %>  <%= link_to("Show", store_item_path(@store, item)) %> <%= link_to("Edit", edit_store_item_path(@store, item)) %>
   </div>
   <% end %>
 
-<div id="primary">
+<div>
 <%= link_to("<< Back to your stores", {:action => 'index'}, :class => 'back-link') %>
 </div>
+</body>

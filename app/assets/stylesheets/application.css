@@ -36,6 +36,13 @@
      }
  }
 
+body {
+  /*vertical-align:middle;*/
+  text-align:left;
+}
+
  h1 {
-   color: green
+   color: green;
+   vertical-align:middle;
+   text-align:center;
  }

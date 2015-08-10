@@ -1,5 +1,6 @@
-<h2 id="primary"><%= @item.name %> details at <%= @item.store.name %> <%= link_to("(edit)", edit_store_item_path(@store, @item)) %></h2>
-<div id="primary">
+<body id="primary">
+<h2><%= @item.name %> details at <%= @item.store.name %> <%= link_to("(edit)", edit_store_item_path(@store, @item)) %></h2>
+<div>
 <div><%= @item.brand %> brand</div>
 <div>type: <%= @item.item_type %></div>
 <div>$<%= @item.price %></div>
@@ -11,3 +12,4 @@
 </div>
 
 <%= link_to '<< Back to store items', @store %>
+</body>
