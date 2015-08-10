@@ -3,7 +3,7 @@ Installation Instructions:
 Upon launching the site, click to sign-up and follow instructions for entering an email address and password to create a user. Seed data will be assigned to you as the first user.
 
 Technologies Used:
-- Devise for authenticating users
+- Devise for authorizing users and authenticating actions
 - Ruby on Rails
 
 Unsolved Problems:
